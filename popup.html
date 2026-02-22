@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OpenMode</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <svg class="brand-icon" width="15" height="15" viewBox="0 0 15 15" fill="none">
+          <path d="M6.5 3.5H3a1 1 0 00-1 1v7a1 1 0 001 1h7a1 1 0 001-1V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M9.5 1.5H13.5V5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.5 1.5L7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">OpenMode</span>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="global-toggle" class="toggle-input">
+        <div class="toggle-track"><div class="toggle-thumb"></div></div>
+      </label>
+    </header>
+
+    <div id="app-body">
+      <section class="section">
+        <p class="section-label">This site</p>
+        <div class="row" id="current-row">
+          <span class="domain" id="current-domain">—</span>
+          <div class="seg" id="current-seg" data-mode="background">
+            <div class="seg-pill"></div>
+            <button class="seg-btn" data-mode="background">BG</button>
+            <button class="seg-btn" data-mode="foreground">FG</button>
+            <button class="seg-btn" data-mode="disabled">OFF</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="section rules-section">
+        <div class="section-top">
+          <p class="section-label">Saved rules</p>
+          <span class="count" id="rules-count">0</span>
+        </div>
+        <div id="rules-list"></div>
+        <p class="empty" id="empty-state">No site overrides yet</p>
+      </section>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
