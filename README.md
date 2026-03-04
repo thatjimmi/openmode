@@ -1,5 +1,7 @@
 # OpenMode
 
+[Chrome Webshop](https://chromewebstore.google.com/detail/openmode/bokakebcbpiieepcoljncknicadpiadc)
+
 A Chrome extension that gives you precise control over how links open — per site.
 
 “Take back control of how websites open links.”
